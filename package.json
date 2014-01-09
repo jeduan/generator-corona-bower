@@ -1,7 +1,7 @@
 {
-  "name": "generator-bower",
+  "name": "generator-corona-bower",
   "version": "0.0.3",
-  "description": "A yeoman generator for bower components",
+  "description": "A yeoman generator for bower components that use corona sdk",
   "keywords": [
     "yeoman-generator",
     "bower",
@@ -9,30 +9,32 @@
     "coffee-script",
     "tdd"
   ],
-  "homepage": "https://github.com/ThorstenHans/generator-bower",
+  "homepage": "https://github.com/jeduan/generator-corona-bower",
   "bugs": {
-    "url": "https://github.com/ThorstenHans/generator-bower/issues"
+    "url": "https://github.com/jeduan/generator-corona-bower/issues"
   },
-  "author": "Thorsten Hans <thorsten.hans@gmail.com> (https://github.com/ThorstenHans)",
+  "authors": [
+    "Thorsten Hans <thorsten.hans@gmail.com> (https://github.com/ThorstenHans)",
+    "Jeduan Cornejo <jeduan@gmail.com> (https://github.com/jeduan)"
+  ],
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ThorstenHans/generator-bower.git"
+    "url": "git://github.com/jeduan/generator-corona-bower.git"
   },
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script --reporter spec"
+    "test": ".node_modules/bin/mocha --compilers coffee:coffee-script --reporter spec"
   },
   "dependencies": {
-    "yeoman-generator": "~0.13.0",
+    "yeoman-generator": "~0.16.0",
     "coffee-script": "~1.6.3",
     "underscore.string": "*"
   },
   "devDependencies": {
-    "mocha": "~1.10.0",
-    "coffee-script": "~1.6.3"
+    "mocha": "~1.16.0"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   },
   "licenses": [
     {
@@ -40,7 +42,6 @@
     }
   ],
   "readmeFilename": "README.md",
-  "gitHead": "cde47af6223c7b36b88c9eb4a32bf414fb9653d9",
   "directories": {
     "test": "test"
   },
