@@ -1,8 +1,13 @@
 {
-  "name": "<%= _.slugify(appname) %>",
+  "name": "<%= bowerComponentName %>",
   "description": "<%= description%>",
-  "main": "dist/<%= slug%>.js",
-  "version": "0.0.0",
+  "main": "<%= slug %>.lua",
+  "version": "0.0.1",
+  "ignore": [
+    "config.lua",
+    "main.lua",
+    "build.settings"
+  ]
   "dependencies": {}
 }
 

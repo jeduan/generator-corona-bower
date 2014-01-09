@@ -1,0 +1,2 @@
+local <%= validVariableName %> = {}
+return <%= validVariableName %>
