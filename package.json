@@ -1,6 +1,6 @@
 {
   "name": "generator-corona-bower",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A yeoman generator for bower components that use corona sdk",
   "keywords": [
     "yeoman-generator",
@@ -23,7 +23,7 @@
     "url": "git://github.com/jeduan/generator-corona-bower.git"
   },
   "scripts": {
-    "test": ".node_modules/bin/mocha --compilers coffee:coffee-script --reporter spec"
+    "test": "node_modules/.bin/mocha --compilers coffee:coffee-script --reporter spec"
   },
   "dependencies": {
     "yeoman-generator": "~0.16.0",

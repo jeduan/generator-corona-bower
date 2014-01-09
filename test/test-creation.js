@@ -1,18 +1,19 @@
 /*global describe, beforeEach, it*/
 'use strict';
 
-var path    = require('path');
-var helpers = require('yeoman-generator').test;
+var path    = require('path'),
+    helpers = require('yeoman-generator').test,
+    assert = require('yeoman-generator').assert;
 
 
-describe('bower generator', function () {
+describe('corona bower generator', function () {
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('bower:app', [
+      this.app = helpers.createGenerator('corona-bower:app', [
         '../../app'
       ]);
       done();
@@ -22,16 +23,19 @@ describe('bower generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
-      '.jshintrc',
-      '.editorconfig'
+      'bower.json',
+      '.bowerrc',
+      '.gitignore',
+      'foo.lua'
     ];
 
     helpers.mockPrompt(this.app, {
-      'someOption': 'Y'
+      'bowerComponentName': 'foo',
+      'description': 'bar'
     });
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
-      helpers.assertFiles(expected);
+      assert.file(expected);
       done();
     });
   });
