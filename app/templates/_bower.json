@@ -7,7 +7,9 @@
     "config.lua",
     "main.lua",
     "build.settings"
-  ]
-  "dependencies": {}
+  ],
+  "dependencies": {
+    "log": "~0.1.0"
+  }
 }
 
