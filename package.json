@@ -1,6 +1,6 @@
 {
   "name": "generator-corona-bower",
-  "version": "0.0.4",
+  "version": "0.0.4-1",
   "description": "A yeoman generator for bower components that use corona sdk",
   "keywords": [
     "yeoman-generator",
