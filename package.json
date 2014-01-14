@@ -31,7 +31,7 @@
     "underscore.string": "*"
   },
   "devDependencies": {
-    "mocha": "~1.16.0"
+    "mocha": "~1.17.0"
   },
   "engines": {
     "node": ">=0.10.0"
